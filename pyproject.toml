@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryptgit-studio"
+version = "0.1.0"
+description = "A modular foundation for repository analysis and evidence collection."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "CryptGit Studio contributors" },
+]
+dependencies = [
+    "streamlit>=1.40",
+    "appwrite>=9.0.0",
+    "sentry-sdk>=2.0.0",
+]
+
+[project.scripts]
+cryptgit-studio = "cryptgit_studio.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

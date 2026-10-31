@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and test output
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+*.egg-info/
+.eggs/
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local tooling and editor files
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Local databases, logs, temporary files, and generated reports
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+reports/
+*.report.json
+
+# Private test and local demo data
+private-test-data/
+test-data/
+local-demo/
+
+.idea/
+.vscode/

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: cryptgit-studio-demo
+    runtime: python
+    plan: free
+    buildCommand: pip install .
+    startCommand: python demo/create_demo_repository.py /tmp/cryptgit-studio-demo && streamlit run streamlit_app.py --server.address 0.0.0.0 --server.port $PORT
+    envVars:
+      - key: CRYPTGIT_PUBLIC_DEMO_MODE
+        value: "1"
+      - key: CRYPTGIT_DEMO_REPOSITORY
+        value: /tmp/cryptgit-studio-demo
